@@ -57,23 +57,23 @@
 
 @media screen and (max-height: 440px) {
   :root {
-    --box-size: 18px;
+    --box-size: 20px;
     --key-size: 8px;
   }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 410px) {
   :root {
-    --box-size: 16px;
-    --key-size: 6px;
+    --box-size: 18px;
+    --key-size: 5px;
     --box-margin-size: 1.5px;
   }
 }
 
-@media screen and (max-height: 370px) {
+@media screen and (max-height: 380px) {
   :root {
-    --box-size: 14px;
-    --key-size: 4px;
+    --box-size: 16px;
+    --key-size: 5px;
   }
 }
 
@@ -99,7 +99,7 @@
 .key {
   height: var(--key-size);
   width: calc(var(--key-size) / 2);
-  font-size: calc(var(--key-size) / 1.2);
+  font-size: calc((var(--key-size) + 4vh) / 2);
   padding: 8px;
   cursor: pointer;
 }
