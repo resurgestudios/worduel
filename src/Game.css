@@ -2,6 +2,11 @@
   display: grid;
 }
 
+:root {
+  --yellow-color: rgb(162, 151, 54);
+  --green-color: rgb(72, 143, 72);
+}
+
 @media screen and (max-height: 1080px) {
   :root {
     --box-size: 52px;
@@ -127,13 +132,14 @@
   margin: var(--box-margin-size);
 }
 
-.box-green {
-  background-color: rgb(72, 143, 72);
+.box-yellow {
+  background-color: var(--yellow-color);
 }
 
-.box-yellow {
-  background-color: rgb(201, 201, 92);
+.box-green {
+  background-color: var(--green-color);
 }
+
 
 .container {
   font-size: 1.5em;
@@ -166,9 +172,9 @@
 }
 
 .key-yellow {
-  background-color: rgb(201, 201, 92);
+  background-color: var(--yellow-color);
 }
 
 .key-green {
-  background-color: rgb(72, 143, 72);
+  background-color: var(--green-color);
 }
